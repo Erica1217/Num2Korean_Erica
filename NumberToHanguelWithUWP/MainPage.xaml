@@ -7,7 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="640" VerticalAlignment="Bottom">
+        <Button x:Name="button" Content="입력" HorizontalAlignment="Left" Height="56" Margin="103,341,0,0" VerticalAlignment="Top" Width="163" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="Auto" Margin="28,414,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" TextChanged="textBox_TextChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="104" Margin="10,165,0,0" TextWrapping="Wrap" Text="숫자를 입력해주세요" VerticalAlignment="Top" Width="340" FontSize="22" TextAlignment="Right" />
     </Grid>
 </Page>
