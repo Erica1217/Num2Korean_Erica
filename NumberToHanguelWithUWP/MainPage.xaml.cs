@@ -42,6 +42,7 @@ namespace NumberToHanguelWithUWP
             if (!int.TryParse(sData, out iData) || !change_number_to_korean(iData, out Korean))
             {
                 SimpleMessageDialog("입력값을 확인해주세요");
+                textBox.Text = "";
                 return;
             }
             textBlock.Text = Korean;
